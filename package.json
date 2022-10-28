@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "docker-compose up --build",
-    "build:stop": "docker-compose down -v",
+    "serve-nest": "docker-compose up --build",
+    "serve-nest:stop": "docker-compose down -v",
     "generate-api-client": "docker-compose up --build openapi_generator",
+    "update-api-client": "sh ./scripts/update-api.sh",
+    "generate-and-update-api-client": "npm run generate-api-client && npm run update-api-client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
