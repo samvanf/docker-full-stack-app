@@ -1,5 +1,4 @@
-import { ApiProperty } from '@nestjs/swagger';
-
+import { ApiProperty, ApiResponse } from '@nestjs/swagger';
 export class TaskDto {
   @ApiProperty({
     description: 'This is the id of the tasks',
