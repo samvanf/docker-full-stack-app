@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "docker-compose up --build",
+    "build:stop": "docker-compose down -v",
+    "generate-api-client": "docker-compose up --build openapi_generator",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
