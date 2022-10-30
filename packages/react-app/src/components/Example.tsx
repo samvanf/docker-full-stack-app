@@ -2,7 +2,7 @@ import { useQuery } from "react-query";
 import { tasksApi } from "../api/api";
 
 export default function Example() {
-  const id = "fake id";
+  const id = "fake_id";
   const { isLoading, error, data } = useQuery(`tasks_find_one_${id}`, () =>
     tasksApi.tasksControllerFindOne({ id })
   );
