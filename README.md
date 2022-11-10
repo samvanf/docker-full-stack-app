@@ -8,3 +8,7 @@ docker-compose down -v
 docker-compose up --build
 ```
 The issue may stem from using an outdated volume with node modules from before installing new packages. These commands will remove the old volumes and ensure that a new one is built from the current node modules.
+
+# Serving the app notes
+
+When you run `npm run serve-nest` and go to http://localhost:3001/api you can see the Swagger doc. There are some weird errors happening, I'm not sure what to do about them, though.
